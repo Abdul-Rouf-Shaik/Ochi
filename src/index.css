@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: nueue;
+    src: url(./fonts/NeueMontreal-Regular.ttf);
+}
+@font-face {
+    font-family: founders;
+    src: url(./fonts/FoundersGrotesk-Semibold.ttf);
+}
+
+* {
+    color: #fff;
+}
+
+.font-nueue {
+    font-family: nueue;
+}
+.font-founders {
+    font-family: founders;
+}
+
+.anime {
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 96px));
+    }
+}
